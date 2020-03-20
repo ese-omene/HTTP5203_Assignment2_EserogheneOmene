@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tickets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ticket" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="ticketID" />
+              <xs:element name="dateofissue" type="xs:date" />
+              <xs:element name="status" type="status" />
+              <xs:element name="message"  maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="description" type="xs:string"/>
+                  <xs:element name="date" type="xs:date" />
+                  <xs:element name="userid" type="validID" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+              </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="ticketID">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[t|T]{1}[0-9]{8}" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="status">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="New" />
+    <xs:enumeration value="Opened" />
+    <xs:enumeration value="Pending" />
+    <xs:enumeration value="Needs Information" />
+    <xs:enumeration value="Declined" />
+    <xs:enumeration value="Approved" />
+    <xs:enumeration value="Closed" />
+  </xs:restriction>
+</xs:simpleType>
+
+
+
+
+
+<xs:simpleType name="validID">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{6}" />
+  </xs:restriction>
+</xs:simpleType>
+
+
+
+
+</xs:schema>

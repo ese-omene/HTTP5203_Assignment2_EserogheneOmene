@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="tickets.xsd">
+
+
+  <ticket>
+    <id>t12345678</id>
+      <dateofissue>2001-01-01</dateofissue>
+      <status>Declined</status>
+      <message>
+        <description>Found some stuff that needs fixing</description>
+        <date>2019-01-02</date>
+        <userid>123455</userid>
+      </message>
+
+  </ticket>
+
+  <ticket>
+    <id>t12349978</id>
+      <dateofissue>2019-01-01</dateofissue>
+      <status>Closed</status>
+      <message>
+        <description>Mission complete</description>
+        <date>2019-01-02</date>
+      <userid>128855</userid>
+      </message>
+  </ticket>
+
+
+  <ticket>
+    <id>t12345678</id>
+      <dateofissue>2019-01-05</dateofissue>
+      <status>Needs Information</status>
+      <message>
+        <description>Missing customer information</description>
+        <date>2019-01-06</date>
+        <userid>123456</userid>
+        </message>
+
+  </ticket>
+
+
+
+
+
+
+
+
+</tickets>

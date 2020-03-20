@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="users">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="user" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="firstname">
+                    <xs:complexType>
+                      <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                              <xs:attribute name="title" type="titles" use="optional"/>
+                          </xs:extension>
+                      </xs:simpleContent>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="lastname" type="xs:string" />
+                </xs:sequence>
+              </xs:complexType>
+              </xs:element>
+              <xs:element name="username" type="xs:string" />
+              <xs:element name="role" type="roles" />
+              <xs:element name="id" type="validID" />
+              <xs:element name="password" type="validPassword" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+<xs:simpleType name="roles">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="user" />
+    <xs:enumeration value="support staff"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="validID">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{6}" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="validPassword">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="([A-Za-z]+[0-9]|[0-9]+[A-Za-z])[A-Za-z0-9]*" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="titles">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Mr." />
+    <xs:enumeration value=" " />
+    <xs:enumeration value="Mrs." />
+    <xs:enumeration value="Ms." />
+    <xs:enumeration value="Miss." />
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
