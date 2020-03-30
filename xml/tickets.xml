@@ -2,8 +2,6 @@
 <?xml-stylesheet  type="text/xsl" href="admin.xsl" ?>
 <tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="tickets.xsd">
-
-
   <ticket>
     <id>t12345678</id>
       <dateofissue>2001-01-01</dateofissue>
@@ -13,9 +11,7 @@
         <date>2019-01-02</date>
         <userid>123456</userid>
       </message>
-
   </ticket>
-
   <ticket>
     <id>t12349978</id>
       <dateofissue>2019-01-01</dateofissue>
@@ -26,8 +22,6 @@
       <userid>128855</userid>
       </message>
   </ticket>
-
-
   <ticket>
     <id>t12345678</id>
       <dateofissue>2019-01-05</dateofissue>
@@ -37,14 +31,5 @@
         <date>2019-01-06</date>
         <userid>123456</userid>
         </message>
-
   </ticket>
-
-
-
-
-
-
-
-
 </tickets>

@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b554c5-4df6-45db-9fab-4a3eda930fc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staff.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staffTickets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userTickets.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/admin.xsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tickets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic.php" beforeDir="false" afterPath="$PROJECT_DIR$/old/logic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/staff.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tickets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/tickets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tickets.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/xml/tickets.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/xml/users.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xml" />
+      <recent name="$PROJECT_DIR$/old" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -68,14 +79,34 @@
       <workItem from="1584670875153" duration="550000" />
       <workItem from="1584671534647" duration="8999000" />
       <workItem from="1585192495809" duration="120000" />
-      <workItem from="1585414044112" duration="25396000" />
+      <workItem from="1585414044112" duration="39452000" />
     </task>
+    <task id="LOCAL-00001" summary="the struggle continues">
+      <created>1585506139396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585506139397</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="the struggle continues" />
+    <option name="LAST_COMMIT_MESSAGE" value="the struggle continues" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="483" y="113" key="CommitChangelistDialog2" timestamp="1585506139268">
+      <screen x="0" y="23" width="1920" height="980" />
+    </state>
+    <state x="483" y="113" key="CommitChangelistDialog2/1920.116.1440.877/0.23.1920.980@0.23.1920.980" timestamp="1585506139268" />
+    <state x="518" y="251" key="Vcs.Push.Dialog.v2" timestamp="1585506147395">
+      <screen x="0" y="23" width="1920" height="980" />
+    </state>
+    <state x="518" y="251" key="Vcs.Push.Dialog.v2/1920.116.1440.877/0.23.1920.980@0.23.1920.980" timestamp="1585506147395" />
     <state x="988" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1585455540468">
       <screen x="0" y="23" width="1920" height="977" />
     </state>

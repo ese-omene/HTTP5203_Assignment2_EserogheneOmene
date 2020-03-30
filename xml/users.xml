@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="users.xsd">
+<user>
+  <name>
+    <firstname title="Mr.">Bob</firstname>
+    <lastname>Builder</lastname>
+  </name>
+  <username>BBuilder123</username>
+  <role>user</role>
+  <id>123456</id>
+  <password>bal00n</password>
+</user>
+
+<user>
+  <name>
+    <firstname title="Ms.">Curly</firstname>
+    <lastname>Sue</lastname>
+  </name>
+  <username>SuzyQ</username>
+  <role>support staff</role>
+  <id>123457</id>
+  <password>m0nths</password>
+</user>
+
+<user>
+  <name>
+    <firstname>James</firstname>
+    <lastname>Pop</lastname>
+  </name>
+  <username>JPop771</username>
+  <role>user</role>
+  <id>123458</id>
+  <password>4ourth</password>
+</user>
+
+</users>
+
