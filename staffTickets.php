@@ -13,7 +13,15 @@ if(!isset($_SESSION['username'])){
     $xmldoc->load('xml/tickets.xml');
     $tickets = $xmldoc->getElementsByTagName("ticket");
 
+        if (isset($_POST['ticketDetails'])){
+            $id = $_POST['id'];
+            $_SESSION['id'] = $id;
 
+            var_dump($id);
+            var_dump($_SESSION['id']);
+           header('Location: ticket_details.php');
+
+        }
 
 
 
@@ -37,10 +45,16 @@ if(!isset($_SESSION['username'])){
     <div class="card-body">
         <h5 class="card-title">Status: <?= $tickets->item($i)->getElementsByTagName("status")[0]->textContent?></h5>
         <p class="card-text">Description: <?= $tickets->item($i)->getElementsByTagName("description")[0]->textContent?></p>
-        <a href="#" class="btn btn-primary">Details</a>
+       <!-- <a href="#" class="btn btn-primary">Details</a>-->
     </div>
+    <form action=" " method="post">
+        <input type="hidden" name="id" value="<?= $tickets->item($i)->getElementsByTagName("id")[0]->textContent?>" />
+        <input type="submit" class="button btn btn-primary" name="ticketDetails" value="Details" />
+    </form>
 </div>
+
 <?php }?>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

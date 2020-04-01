@@ -29,7 +29,22 @@
       <message>
         <description>Missing customer information</description>
         <date>2019-01-06</date>
-        <userid>123456</userid>
+        <userid>123457</userid>
         </message>
+  </ticket>
+  <ticket>
+    <id>t12345679</id>
+    <dateofissue>2001-01-01</dateofissue>
+    <status>Declined</status>
+    <message>
+      <description>Found some stuff that was broken</description>
+      <date>2019-01-07</date>
+      <userid>123456</userid>
+    </message>
+    <message>
+      <description>Found some stuff that was cracked</description>
+      <date>2019-01-07</date>
+      <userid>123456</userid>
+    </message>
   </ticket>
 </tickets>

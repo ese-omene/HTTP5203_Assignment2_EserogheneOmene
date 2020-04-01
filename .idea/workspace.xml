@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b554c5-4df6-45db-9fab-4a3eda930fc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/old/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staffTickets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userTickets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket_details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/admin.xsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic.php" beforeDir="false" afterPath="$PROJECT_DIR$/old/logic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/tickets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickets.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/xml/tickets.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/users.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/xml/users.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staffTickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/staffTickets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userTickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/userTickets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml/tickets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xml/tickets.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +71,7 @@
       <workItem from="1584670875153" duration="550000" />
       <workItem from="1584671534647" duration="8999000" />
       <workItem from="1585192495809" duration="120000" />
-      <workItem from="1585414044112" duration="39452000" />
+      <workItem from="1585414044112" duration="68121000" />
     </task>
     <task id="LOCAL-00001" summary="the struggle continues">
       <created>1585506139396</created>
@@ -88,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585506139397</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="improvements have bee made">
+      <created>1585541323291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585541323291</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,17 +95,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="the struggle continues" />
-    <option name="LAST_COMMIT_MESSAGE" value="the struggle continues" />
+    <MESSAGE value="improvements have bee made" />
+    <option name="LAST_COMMIT_MESSAGE" value="improvements have bee made" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="483" y="113" key="CommitChangelistDialog2" timestamp="1585506139268">
+    <state x="483" y="113" key="CommitChangelistDialog2" timestamp="1585541323173">
       <screen x="0" y="23" width="1920" height="980" />
     </state>
-    <state x="483" y="113" key="CommitChangelistDialog2/1920.116.1440.877/0.23.1920.980@0.23.1920.980" timestamp="1585506139268" />
-    <state x="518" y="251" key="Vcs.Push.Dialog.v2" timestamp="1585506147395">
+    <state x="483" y="113" key="CommitChangelistDialog2/1920.116.1440.877/0.23.1920.980@0.23.1920.980" timestamp="1585541323173" />
+    <state x="518" y="251" key="Vcs.Push.Dialog.v2" timestamp="1585541427844">
       <screen x="0" y="23" width="1920" height="980" />
     </state>
-    <state x="518" y="251" key="Vcs.Push.Dialog.v2/1920.116.1440.877/0.23.1920.980@0.23.1920.980" timestamp="1585506147395" />
+    <state x="518" y="251" key="Vcs.Push.Dialog.v2/1920.116.1440.877/0.23.1920.980@0.23.1920.980" timestamp="1585541427844" />
+    <state x="420" y="148" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585703127554">
+      <screen x="0" y="23" width="1920" height="1007" />
+    </state>
+    <state x="420" y="148" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.116.1440.877/0.23.1920.1007@0.23.1920.1007" timestamp="1585703127554" />
+    <state x="0" y="23" width="993" height="831" key="dock-window-1" timestamp="1585766814045">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="0" y="23" width="993" height="831" key="dock-window-1/0.23.1440.832@0.23.1440.832" timestamp="1585766814045" />
+    <state x="0" y="23" width="993" height="956" key="dock-window-1/1920.116.1440.877/0.23.1920.1006@0.23.1920.1006" timestamp="1585702717592" />
     <state x="988" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1585455540468">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
