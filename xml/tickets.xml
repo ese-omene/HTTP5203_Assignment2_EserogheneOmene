@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet  type="text/xsl" href="admin.xsl" ?>
-<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="tickets.xsd">
+<?xml-stylesheet type="text/xsl" href="admin.xsl" ?>
+<tickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tickets.xsd">
   <ticket>
     <id>t12345678</id>
-      <dateofissue>2001-01-01</dateofissue>
-      <status>Declined</status>
-      <message>
-        <description>Found some stuff that needs fixing</description>
-        <date>2019-01-02</date>
-        <userid>123456</userid>
-      </message>
-  </ticket>
+    <dateofissue>2001-01-01</dateofissue>
+    <status>Declined</status>
+    <message>
+      <description>Found some stuff that needs fixing</description>
+      <date>2019-01-02</date>
+      <userid>123456</userid>
+    </message>
+  <message><description>Good to go</description><date>2020-04-13</date><userid>123456</userid></message><message><description>Still in progress</description><date>2020-04-17</date><userid>123456</userid></message><message><description>Are there any updates?</description><date>2020-04-30</date><userid>123456</userid></message></ticket>
   <ticket>
     <id>t12349978</id>
-      <dateofissue>2019-01-01</dateofissue>
-      <status>Closed</status>
-      <message>
-        <description>Mission complete</description>
-        <date>2019-01-02</date>
+    <dateofissue>2019-01-01</dateofissue>
+    <status>Closed</status>
+    <message>
+      <description>Mission complete</description>
+      <date>2019-01-02</date>
       <userid>128855</userid>
-      </message>
+    </message>
   </ticket>
   <ticket>
-    <id>t12345678</id>
-      <dateofissue>2019-01-05</dateofissue>
-      <status>Needs Information</status>
-      <message>
-        <description>Missing customer information</description>
-        <date>2019-01-06</date>
-        <userid>123457</userid>
-        </message>
+    <id>t12345674</id>
+    <dateofissue>2019-01-05</dateofissue>
+    <status>Needs Information</status>
+    <message>
+      <description>Missing customer information</description>
+      <date>2019-01-06</date>
+      <userid>123457</userid>
+    </message>
   </ticket>
   <ticket>
     <id>t12345679</id>

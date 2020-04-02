@@ -17,8 +17,8 @@ if(!isset($_SESSION['username'])){
             $id = $_POST['id'];
             $_SESSION['id'] = $id;
 
-            var_dump($id);
-            var_dump($_SESSION['id']);
+           // var_dump($id);
+           // var_dump($_SESSION['id']);
            header('Location: ticket_details.php');
 
         }
@@ -44,8 +44,6 @@ if(!isset($_SESSION['username'])){
     <h5 class="card-header">Ticket # <?= $tickets->item($i)->getElementsByTagName("id")[0]->textContent?></h5>
     <div class="card-body">
         <h5 class="card-title">Status: <?= $tickets->item($i)->getElementsByTagName("status")[0]->textContent?></h5>
-        <p class="card-text">Description: <?= $tickets->item($i)->getElementsByTagName("description")[0]->textContent?></p>
-       <!-- <a href="#" class="btn btn-primary">Details</a>-->
     </div>
     <form action=" " method="post">
         <input type="hidden" name="id" value="<?= $tickets->item($i)->getElementsByTagName("id")[0]->textContent?>" />
@@ -54,6 +52,7 @@ if(!isset($_SESSION['username'])){
 </div>
 
 <?php }?>
+<a class="btn btn-success btn-lg btn-block" href="logout.php" role="button">Logout</a>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

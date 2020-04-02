@@ -1,12 +1,13 @@
 <?php
 session_start();
 
-var_dump($_SESSION['id']);
+//var_dump($_SESSION['userID']);
 
-$id = $_SESSION['id'];
+$id = $_SESSION['id']; // ticket ID
+$user = $_SESSION['userID']; //user ID
 
 
-print $id;
+//print $id;
 
 if(!isset($_SESSION['id'])){
     header('Location: index.php');
@@ -20,7 +21,53 @@ if(!isset($_SESSION['id'])){
     $id = $_SESSION['id'];
     $ticketXml = simplexml_load_file("xml/tickets.xml");
     $ticketDetails = $ticketXml->xpath("/tickets/ticket[id='$id']/message");
-    print_r($ticketDetails);
+
+    $userRole = simplexml_load_file('xml/users.xml');
+    $role = $userRole->xpath("/users/user[id='$user']/role");
+
+    if (isset($_POST['ticketDetails'])){
+
+        $desc = $_POST['message'];
+        $date = $_POST['date'];
+      //  var_dump($desc);
+        //var_dump($date);
+        //var_dump($user);
+        $newMsg = $ticketXml->ticket->addChild('message');
+        $newDesc = $newMsg->addChild('description', $desc);
+        $newDate = $newMsg->addChild('date', $date);
+        $newUserID = $newMsg->addChild('userid', $user);
+        $ticketXml->saveXML('xml/tickets.xml');
+
+
+       if ($role =='user'){
+           header('location:userTickets.php');
+       } else {
+           header('location:staffTickets.php');
+       }
+
+
+
+
+       // $xmldoc->load('xml/tickets.xml');
+        //$tickets = $xmldoc->getElementsByTagName('ticket');
+
+//        $newTicket = $xmldoc->createElement('ticket');//<ticket>
+//        $newMessage = $xmldoc->createElement('message');//<message>
+//        $newDescription = $xmldoc->createElement('description', $desc);//<description>
+//        $newDate = $xmldoc->createElement('date', $date);//<date>
+//        $newUser = $xmldoc->createElement('userid', $user);//<userid>
+//        $newMessage->appendChild($newDescription);
+//        $newMessage->appendChild($newDate);
+//        $newMessage->appendChild($newUser);
+//        $newTicket->appendChild($newMessage);
+//
+//        $xmldoc->save('xml/tickets.xml');
+
+
+
+
+
+    }
 
 
 }
@@ -39,19 +86,39 @@ if(!isset($_SESSION['id'])){
 <body>
 
     <div class="card">
-        <h5 class="card-header">Messages</h5>
+        <h5 class="card-header">Message Log</h5>
         <div class="card-body">
 
 
             <?php foreach($ticketDetails as $description){?>
                 <h5 class="card-title">Date:  <?=$description->date ?></h5>
             <p class="card-text">Description: <?=$description->description ?></p>
+                <h6 class="card-subtext">Logged by: user <?=$description->userid ?></h6>
             <?php }?>
 
+
+            <div class="card">
+                <h5 class="card-header">New Messages</h5>
+                <div class="card-body">
             <form action=" " method="post">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" name="date" placeholder="YYYY-MM-DD">
+                </div>
+                <div class="form-group">
+                    <label for="message">New Message</label>
+
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </div>
                 <input type="hidden" name="id" value="<?=$id?>" />
-                <input type="submit" class="button btn btn-primary" name="ticketDetails" value="Details" />
+                <input type="hidden" name="userID" value="<?=$user?>" />
+                <input type="submit" class="button btn btn-primary" name="ticketDetails" value="Submit" />
             </form>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 
